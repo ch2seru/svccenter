@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="MANAGED" />
+			
+			<!-- DataSource 직접선언
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.OracleDriver" />
+				<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+				<property name="username" value="scott" />
+				<property name="password" value="tiger" />
+			</dataSource>
+			-->
+			 
+			 <!-- WAS에 설정된 DataSource를 JNDI로 사용 -->
+			 <dataSource type="JNDI">
+			 	<!-- <property name="data_source" value="java:/comp/env/jdbc/myoracle"/> -->
+				<!-- <property name="data_source" value="java:/comp/env/jdbc/mysql"/> -->
+				<property name="data_source" value="java:/comp/env/jdbc/wyzsoft"/>
+			 </dataSource>
+			
+		</environment>
+	</environments>
+	
+	<mappers>
+		<!-- <공통코드> -->
+        <mapper resource="/com/wyzsoft/gen_code/dao/sqlMap/GenCode.xml" />
+        <!-- <공통코드> -->
+	</mappers>
+
+</configuration>
