@@ -1,0 +1,164 @@
+@charset "euc-kr";
+
+body		{background-repeat:no-repeat; background-position:center top;}
+
+/* ��� �̹��� */
+#body_bg_research		{background-image:url(/images/new/research_img.jpg);}
+#body_bg_announcement	{background-image:url(/images/new/announcement_img.jpg);}
+#body_bg_customers	{background-image:url(/images/new/customers_img.jpg);}
+#body_bg_data	{background-image:url(/images/new/data_img.jpg);}
+#body_bg_kimst	{background-image:url(/images/new/kimst_img.jpg);}
+#body_bg_guide	{background-image:url(/images/new/kimst_img.jpg);}
+#body_bg_members	{background-image:url(/images/new/kimst_img.jpg);}
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, font, img, ins, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th		{border:0; margin:0; padding:0;
+font-family:'Dotum', 'Gulim'; /*font-size:12px;*/ line-height:14pt; /*color:#707070;*/}
+
+legend		{display:none;}
+
+#wrapper		{margin:0 auto; position:relative; width:960px;}
+#mainimg_frame		{width:960px;}
+#header		{width:960px;height:115px;margin:0;}
+#accessibility		{overflow:hidden;height:0;}
+#main-logo a		{float:left;width: 210px;height: 50px;margin-top:40px;}
+
+/* topmenu */
+#topmenu ul		{float:left;width:750px;height:35px;text-align:right;margin-top:5px;}
+#topmenu li		{font-size:12px;display:inline;padding: 0 8px 0 5px;background-image:url(/images/new/bar1.gif);background-repeat:no-repeat;background-position:right;}
+
+
+/* top_search */
+#top_search		{float:left;width:650px;padding:10px 0 0 100px;}
+#top_search #keyword		{float:left;color:black;font-weight:bold;font-size:14px;border:3px solid #20358c; padding:5px;width:320px;}
+#top_search #submit		{float:left;border:2px solid #20358c; }
+
+
+/* Mainmenu */
+#Mainmenu		{float: left;background-image:url(/images/new/bg_menu.gif);width:960px;height:40px;margin:25px 0 60px 0;}
+#topmenu_sub ul		{position:absolute;left:0;display:none;margin:0;}
+#topmenu_sub li		{float: left;display:inline;padding: 3px 0 0 0;}
+#topmenu_sub li ul		{width: 641px;}
+#topmenu_sub li a		{font-size:12px;display: block;padding: 6px 35px 8px 35px;}
+#topmenu_sub li.menu2 ul		{margin-left:80px;}
+#topmenu_sub li.menu3 ul		{margin-left:100px;}
+#topmenu_sub li.menu4 ul		{margin-left:280px;}
+#topmenu_sub li.menu5 ul		{margin-left:180px;}
+#topmenu_sub ul li		{display: block;padding: 0;}
+#topmenu_sub ul li a		{display: block;padding: 5px 10px 0 8px;background-image:url(/images/new/icon1.gif);background-repeat:no-repeat;text-decoration:none;}
+#topmenu_sub ul li a:hover		{font-weight:bold;color:#3164b4;}
+#font-size		{text-align:right;margin:10px 15px 0 800px;}
+#font-size a		{font-size:12px;color:white;}
+#font_small		{float: left;width:65px;background: url(/images/new/btn_text_minus.gif) no-repeat 1px;margin-right:10px;}
+#font_big			{float: left;width:65px;background: url(/images/new/btn_text_plus.gif) no-repeat 1px;}
+
+
+/* Submenu */
+#Submenu		{position: absolute;float: left;margin: 100px 0 0 0;width: 180px;background-image:url(/images/new/bg_left_menu.gif);}
+#Submenu h1		{text-align:center;margin:20px 0 23px 0;}
+#Submenu li		{display: block;padding-left:30px;height:25px;background: url(/images/new/bg_submenu_off.gif) no-repeat 15px -4px;}
+#Submenu .over		{display: block;padding-left:30px;height:25px;background: url(/images/new/bg_submenu_on.gif) no-repeat 15px -4px;}
+#Submenu .pre		{display: block;padding-left:30px;height:25px;background: url(/images/new/bg_submenu_pre_off.gif) no-repeat 15px -4px;}
+#Submenu .pre_over		{display: block;padding-left:30px;height:25px;background: url(/images/new/bg_submenu_pre_on.gif) no-repeat 15px -4px;}
+#Submenu .over_color		{font-weight:bold;color:#3164b4;}
+#Submenu a		{font-size:12px;text-decoration:none;}
+#Submenu a:hover		{font-size:12px;font-weight:bold;color:#3164b4;}
+#submenu_bottom		{margin-top:15px;border-bottom: #273f95 5px solid;}
+
+
+/* Contents */
+#Contents		{margin-left:205px;width:645px;}
+#location		{font-size:12px;vertical-align:middle;}
+#contents_top h1		{margin:30px 0 10px 0;}
+#contents_e		{font-size:12px;}
+#unicorn_body		{}
+
+
+/* Copyright */
+#Copyright		{width:960px;height:110px;padding-top:25px;}
+#guide li		{display:inline;padding-right:12px;}
+#gotop		{margin-left:485px;}
+#guide_line		{border-bottom: #e3e3e3 1px solid;margin:6px 0 6px 0;}
+#noemail		{color:#774b4b;font-size:11px;}
+#address		{font-size:12px;margin-top:7px;color:#888888;line-height:13px;}
+
+
+/* Quickmenu */
+#banner_ocf		{border: #7fa5c8 1px solid;}
+#Quickmenu		{position: absolute;}
+#Quickmenu_contents		{border: #dbdbdb 1px solid;}
+#Quickmenu li					{text-align:center;background: url(/images/new/line_quickmenu.gif) no-repeat;padding-top:2px;}
+#quick_top		{text-align:center;margin-top:7px;}
+
+
+/* ���� CSS */
+a:link		{font-family:"����";color:#707070;text-decoration:none}
+a:active	{font-family:"����";color:#707070;text-decoration:none}
+a:visited	{font-family:"����";color:#707070;text-decoration:none}
+a:hover	{font-family:"����";color:#707070;text-decoration:underline}
+
+#research_txt						{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px; line-height:12pt;}
+#research_txt a:link				{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px; line-height:12pt;}
+#research_txt	a:visited		{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px; line-height:12pt;}
+#research_txt	a:hover		{font-family:'Dotum', 'DotumChe';  text-decoration:underline; color:#295E1B; letter-spacing:0px; line-height:12pt; font-weight:bold;}
+
+.board_title_bg		{background-image:url(/images/board_title_box_02.gif); background-repeat:repeat-x; background-position:left top;}
+.board_txt_bg		{background-image:url(/images/board_dotted.gif); background-repeat:repeat-x; background-position:left top;}
+
+#board_title	{font-size:12px; font-family:'Dotum', 'DotumChe'; text-align:center;	 text-decoration:none; color:#3D6EA9; letter-spacing:-1px; line-height:120%;}
+#board_list	{font-size:11px; font-family:'Dotum', 'DotumChe'; text-align:center;  text-decoration:none; color:#666666; letter-spacing:0px;}
+
+#board_list_txt					{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px; padding-left:5px;}
+#board_list_txt a:link		{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px;}
+#board_list_txt a:visited	{font-family:'Dotum', 'DotumChe';  text-decoration:none;  color:#666666; letter-spacing:0px;}
+#board_list_txt a:hover		{font-family:'Dotum', 'DotumChe';  text-decoration:underline; color:#000000; letter-spacing:0px;}
+
+#board_list_txt_num						{font-family:'Tahoma', 'Dotum';  text-decoration:none; color:#666666; letter-spacing:0px; padding-left:3px;padding-right:3px;}
+#board_list_txt_num a:link			{font-family:'Tahoma', 'Dotum';  text-decoration:none; color:#666666; letter-spacing:0px; padding-left:3px;padding-right:3px;}
+#board_list_txt_num a:visited		{font-family:'Tahoma', 'Dotum';  text-decoration:none; font-weight:bold; color:#575757; letter-spacing:0px; padding-left:3px;padding-right:3px;}
+#board_list_txt_num a:hover		{font-family:'Tahoma', 'Dotum';  text-decoration:underline; color:#000000; letter-spacing:0px; padding-left:3px;padding-right:3px;}
+
+#search_text			{font-size:10pt; font-family:'Dotum', 'DotumChe'; text-align:center;  text-decoration:none; color:#606060; letter-spacing:0px; line-height:12pt; padding:3px;}
+#search_text_sel		{font-size:8pt; font-family:'Dotum', 'DotumChe'; text-align:center;  text-decoration:none; color:#606060; letter-spacing:0px; line-height:12pt; padding:3px;}
+
+.bg_contents_bottom_charge	{background-image:url(/images/contents_bottom_charge_boxbg.gif); background-repeat:repeat-x; background-position:left top;}
+
+
+
+/* ������ layout */
+
+#unc-content		{ margin: 0px auto; width: 645px; text-align: left; }
+
+#unc-print-content				{ text-align: left; }
+#unc-message-content		{ text-align: left; }
+#pop-content						{ text-align: left; }
+
+
+
+#disclosure_Tabbg				{background-image:url(/images/kimst_disclosure_con_title_bg.gif); background-repeat:no-repeat; background-position:left top;}
+
+.disclosure_Title					{padding-left:4px; font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#ffffff; letter-spacing:0px;}
+.disclosure_Title a:link		{padding-left:4px; font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#ffffff; letter-spacing:0px;}
+.disclosure_Title a:visited	{padding-left:4px; font-family:'Dotum', 'DotumChe';  text-decoration:none;  color:#ffffff; letter-spacing:0px;}
+.disclosure_Title a:hover		{padding-left:4px; font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#ffffff; letter-spacing:0px; font-weight:bold;}
+
+#disclosure_txt					{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px; padding-left:5px;}
+#disclosure_txt a:link			{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#666666; letter-spacing:0px;}
+#disclosure_txt a:visited		{font-family:'Dotum', 'DotumChe';  text-decoration:none;  color:#666666; letter-spacing:0px;}
+#disclosure_txt a:hover		{font-family:'Dotum', 'DotumChe';  text-decoration:none; color:#114563; letter-spacing:0px; font-weight:bold;}
+
+#organization_title				{font-family:'Dotum', 'DotumChe'; text-align:center; font-size:8pt; text-decoration:none; font-weight:bold; color:#727611; letter-spacing:0px; line-height:12pt;}
+#organization_txt					{font-family:'Dotum', 'DotumChe'; font-size:9pt; text-decoration:none; color:#606060; letter-spacing:0px; line-height:12pt;}
+
+.kimst_yearplan_Title						{font-family:'Dotum', 'DotumChe'; font-size:9pt; text-decoration:none; color:#505050; letter-spacing:0px; line-height:12pt; font-weight:bold; text-align:center;}
+.kimst_yearplan_Con_black_center	{font-family:'Dotum', 'DotumChe'; font-size:9pt; text-decoration:none; color:#000000; letter-spacing:-1px; line-height:12pt; text-align:center;}
+.kimst_yearplan_Con_gray_left			{font-family:'Dotum', 'DotumChe'; font-size:9pt; text-decoration:none; color:#505050; letter-spacing:-1px; line-height:12pt; padding-left:8px; padding-right:8px;}
+.kimst_yearplan_Con_gray_nor		{font-family:'Dotum', 'DotumChe'; font-size:9pt; text-decoration:none; color:#777777; letter-spacing:-1px; line-height:12pt; padding-left:8px; padding-right:8px;}
+
+.vam	{vertical-align:middle;}
+
+
+
+
+
+

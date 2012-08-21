@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
+      <put-attribute name="head" value="/WEB-INF/tiles/head.jsp"/>
+      <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"/>
+      <put-attribute name="aside"   value="/WEB-INF/tiles/aside.jsp"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/body.jsp"/>
+      <put-attribute name="footer"   value="/WEB-INF/tiles/footer.jsp"/>
+  </definition>
+
+  <definition name="/gen_code/*.tiles" extends="baseLayout">
+      <put-attribute name="title"  value="공통코드"/>
+      <put-attribute name="head" value="/gen_code/head/{1}_head.jsp"/>
+      <put-attribute name="body"   value="/gen_code/{1}.jsp"/>
+      <put-attribute name="aside"   value="/gen_code/submenu.jsp"/>
+  </definition>
+  
+  <!-- <definition name="/gen_code/gen_code_list" extends="baseLayout">
+      <put-attribute name="title"  value="공콩코드"/>
+      <put-attribute name="head" value="/gen_code/head/head.jsp"/>
+      <put-attribute name="body"   value="/gen_code/gen_code_list.jsp"/>
+      <put-attribute name="aside"   value="/gen_code/submenu.jsp"/>
+  </definition>
+  
+  <definition name="/gen_code/gen_code_save" extends="baseLayout">
+      <put-attribute name="title"  value="공콩코드"/>
+      <put-attribute name="head" value="/gen_code/head/head.jsp"/>
+      <put-attribute name="body"   value="/gen_code/gen_code_save.jsp"/>
+      <put-attribute name="aside"   value="/gen_code/submenu.jsp"/>
+  </definition> -->
+  
+
+
+</tiles-definitions>

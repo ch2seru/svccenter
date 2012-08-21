@@ -1,0 +1,79 @@
+@charset "euc-kr";
+body { margin:0; padding:0; border:0; font-family:'Dotum', 'DotumChe', 'Gulim', 'GulimChe'; font-size:8pt; color:#757575; line-height:1.7em; text-align:center; background:#fff;}
+img {border:0; padding:0; display:inline; border-color:#d5d5d5; selector-dummy:expression(this.hideFocus=true);}
+form {display:inline;}  /* �� ���� �Ⱥ��̱�*/
+
+/* font-basic */
+a:link {color:#757575; text-decoration:none;}
+a:active {color:#757575; text-decoration:none;}
+a:visited {color:#757575; text-decoration:none;}
+a:hover {color:#000000; text-decoration:underline;}
+
+td{font-family:'Dotum', 'DotumChe', 'Gulim', 'GulimChe'; font-size:8pt; font-style:normal; line-height:14pt; color:#707070; letter-spacing:0;}
+body, textarea, input, select caption {font-family:'Dotum', 'DotumChe', 'Gulim', 'GulimChe'; font-size:8pt; color:#707070;}
+table{border:0;}
+img{vertical-align:middle;}
+caption {position:absolute; visibility:hidden; width:0px; height:0px; overflow:hidden; font:0px; line-height:0;}
+
+/* ���� */
+.top	{text-align:right; padding:10px 0 10px 0; clear:both;}
+.al	{text-align:left; vertical-align:left;}
+.ac	{text-align:center; vertical-align:middle;}
+.ar	{text-align:right; vertical-align:right;}
+
+.Header_Bg {background-image:url('/html/img/header_bg.jpg'); background-repeat:repeat-x; background-position:left top;}
+.Menu_Bg {background-image:url('/html/img/menu_bg.jpg'); background-repeat:repeat-x; background-position:left top;}
+.Footer_Bg {background-image:url('/html/img/footer_bg.jpg'); background-repeat:repeat-x; background-position:left top;}
+
+#header {background: url('/html/img/header_bg.jpg'); repeat-x left top;}
+
+/* ���� �޴� */
+.menu a{ display:block;  float:center;   position: center top;  font:bold 12px ����;  color:#979797;  padding-left:20px;  text-decoration:none;  height:37px;  cursor:pointer;  margin-right:3px;  overflow:hidden; /* border:1px solid #00fffc;*/}
+.menu a:hover { background:url('/html/img/header/menu_on.png') left 0px; }
+.menu a span { display:block;  float:center; line-height:230%;  padding:5px 20px 0 0;  height:37px;  overflow:hidden;/* border:1px solid #FF0000;*/} 
+.menu a:hover span{ background:url('img/header/menu_on.gif') right 0px;  color:#FFF;} 
+
+/* ����޴� �� */
+.subm_bar { height:46px;}
+
+/* ����޴� ��ġ ���� */
+.subm { position:absolute;}
+
+/* ����޴� ����Ʈ ���� */
+.subm ul { margin:0px; float:left; list-style:none;}
+.subm ul li { padding-right:15px; float:left;}
+.subm ul li a { color:#FFF; font: bold 11px ����, dotum; text-decoration:none;}
+.subm ul li a:hover { color:#fffb9a; font: bold 11px ����, dotum;}
+
+/* ���̵� �޴� �е� ���� */
+.side { padding:0 5px 0 5px;}
+
+/*���̵� �޴� ������ �׸��� */
+.shadow { background:url(img/snb/sidemenu_bg.gif) no-repeat ;}	
+
+/* ���̵� �޴� Ÿ��Ʋ */
+#title { color:#2083d9; font: bold 16px ����, dotum;}
+
+/* ���̵� �޴� Ÿ��Ʋ ���� */
+#title_e { color:#a5a5a5; font:10px Arial; padding:0 0 10px 0;}
+
+
+/* ���̵� �޴� ���콺 ��, ���� */
+.D1M a{ display:block;  background:url('img/snb/sidemenu_off.gif') left 0px;  font:bold 12px ����;  color:#979797;  padding-left:15px;  text-decoration:none;  height:30px;  cursor:pointer;  overflow:hidden; /* border:3px solid blue; */}
+.D1M a:hover{ background:url('img/snb/sidemenu_on.gif') left 0px;}
+.D1M a span{ display:block;  background:url('img/snb/sidemenu_off.gif') right 0px;  line-height:240%;  width:100%;   height:30px;  overflow:hidden; /* border:1px solid #FF0000;*/}
+.D1M a:hover span{ background:url('img/snb/sidemenu_on.gif') right 0px; color:#1e85da;} 
+
+/* ���̵� �޴� Ŭ�� �� */
+.D1M_on { background:url('img/snb/sidemenu_on.gif') left 0px; font:bold 12px ����;  color:#979797;  padding-left:15px;  text-decoration:none;  height:30px;  cursor:pointer;  overflow:hidden; /* border:3px solid blue; */}
+.D1M_on a span {  display:block;  background:url('img/snb/sidemenu_on.gif') right 0px;  color:#1e85da; line-height:240%;  width:100%;   height:30px;  overflow:hidden; /* border:1px solid #FF0000; */} 
+
+/* ���̵� 1depth�޴� ���� */
+.sidem { margin-bottom:5px;}
+
+/* ���̵� 2depth ����Ʈ */
+.sidem ul { margin:0; padding:0 0 0 15px; list-style:none;}
+.sidem ul li a { font:9pt ����, Dotum; color:#979797; text-decoration:none; line-height:180%;}
+.sidem ul li a:hover { font-weight:bold;}
+
+border:1px solid #FF0000;
