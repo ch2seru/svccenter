@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wyzsoft.gen_code.dao.sqlMap.GenCode">
+
+    <select id="selectList" resultType="com.wyzsoft.gen_code.model.GenCode" parameterType="java.util.Map" >
+		SELECT   GEN_TYPE        /*일반코드종류*/
+			    ,GEN_CODE        /*일반코드*/
+			    ,DESCRIPTION     /*설명*/
+			    ,GEN_VALUE       /*코드에 대응하는 값*/
+			    ,GEN_VALUE1      /*코드에 대응하는 값1*/
+			    ,GEN_VALUE2      /*코드에 대응하는 값2*/
+			    ,ACTIVE          /*사용여부*/
+          FROM gen_code /*공통코드 테이블*/
+         WHERE 0=0
+         <if test="search_keyword != null and  search_keyword != ''">
+            <if test="search_column == 'gen_code'">
+                AND GEN_CODE like concat('%',#{search_keyword},'%')   
+            </if>
+            <if test="search_column == 'description'">
+                AND DESCRIPTION like concat('%',#{search_keyword},'%')   
+            </if>
+            <if test="search_column == 'gen_type'">
+                AND GEN_TYPE like concat('%',#{search_keyword},'%')   
+            </if>
+        </if>
+        limit  #{limit1},#{limit2}
+         	
+	</select>
+	
+	<select id="totalCount" resultType="int" parameterType="java.util.Map">
+		SELECT   count(GEN_CODE)
+          FROM gen_code /*공통코드 테이블*/
+         WHERE 0=0
+         <if test="search_keyword != null and  search_keyword != ''">
+            <if test="search_column == 'gen_code'">
+                AND GEN_CODE like concat('%',#{search_keyword},'%')   
+            </if>
+            <if test="search_column == 'description'">
+                AND DESCRIPTION like concat('%',#{search_keyword},'%')   
+            </if>
+        </if>
+         	
+	</select>
+		
+	<select id="selectOne" resultType="com.wyzsoft.gen_code.model.GenCode" parameterType="String">
+		SELECT   GEN_TYPE        /*일반코드종류*/
+			    ,GEN_CODE        /*일반코드*/
+			    ,DESCRIPTION     /*설명*/
+			    ,GEN_VALUE       /*코드에 대응하는 값*/
+			    ,GEN_VALUE1      /*코드에 대응하는 값1*/
+			    ,GEN_VALUE2      /*코드에 대응하는 값2*/
+			    ,ACTIVE          /*사용여부*/
+          FROM gen_code /*공통코드 테이블*/
+         WHERE GEN_CODE = #{gen_code}
+	</select>
+
+    <insert id="insert" parameterType="com.wyzsoft.gen_code.model.GenCode">
+    	INSERT INTO gen_code(    GEN_TYPE        /*일반코드종류*/
+							    ,GEN_CODE        /*일반코드*/
+							    ,DESCRIPTION     /*설명*/
+							    ,GEN_VALUE       /*코드에 대응하는 값*/
+							    ,GEN_VALUE1      /*코드에 대응하는 값1*/
+							    ,GEN_VALUE2      /*코드에 대응하는 값2*/
+							    ,ACTIVE          /*사용여부*/
+							    ,CREATED_DATE    /*생성일*/
+							 )
+					   VALUES(
+					   			 #{gen_type}       /*일반코드종류*/
+							    ,#{gen_code}       /*일반코드*/
+							    ,#{description}    /*설명*/
+							    ,#{gen_value}      /*코드에 대응하는 값*/
+							    ,#{gen_value1}     /*코드에 대응하는 값1*/
+							    ,#{gen_value2}     /*코드에 대응하는 값2*/
+							    ,#{active}         /*사용여부*/
+							    ,now()
+					   	     )
+    </insert>
+    
+    <update id="update" parameterType="com.wyzsoft.gen_code.model.GenCode">
+    	UPDATE gen_code SET
+    	       GEN_TYPE    = #{gen_type}    /*일반코드종류*/
+			  ,DESCRIPTION = #{description} /*설명*/
+			  ,GEN_VALUE   = #{gen_value}   /*코드에 대응하는 값*/
+			  ,GEN_VALUE1  = #{gen_value1}  /*코드에 대응하는 값1*/
+			  ,GEN_VALUE2  = #{gen_value2}  /*코드에 대응하는 값2*/
+			  ,ACTIVE      = #{active}      /*사용여부*/
+			  ,UPDATED_DATE= now()          /*수정일*/
+        WHERE GEN_CODE = #{gen_code}
+    </update>
+    
+    <delete id="delete" parameterType="String">
+    	DELETE FROM gen_code
+         WHERE GEN_CODE = #{gen_code} 
+    </delete>
+
+    <select id="checkDuplicate" resultType="int" parameterType="com.wyzsoft.gen_code.model.GenCode">
+		SELECT  count(*)
+          FROM gen_code /*공통코드 테이블*/
+         WHERE GEN_CODE = #{gen_code}
+           AND GEN_TYPE = #{gen_type}
+	</select>
+
+</mapper>
